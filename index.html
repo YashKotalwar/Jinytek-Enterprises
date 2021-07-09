@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jinytek Enterprise</title>
+    <link rel="icon" href="logo_icon.jpg">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css"> <!-- Templatemo style -->
+
+    <style>
+        #navbar-default {
+            transition: 500ms ease;
+            background: #f8f9fa;
+        }
+
+        .ml2 {
+            font-weight: 900;
+            font-size: 3.5em;
+        }
+
+        .ml2 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+
+        .button {
+            background: none;
+            border: 2px solid white;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+            width: 140px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        a.dropdown-item {
+            height: 50px;
+            line-height: 45px;
+            border-bottom: 1px solid #000;
+            margin: 0px;
+        }
+
+        a.dropdown-item:hover {
+            color: yellow;
+            background-color: #000;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        a:link {
+            color: rgb(128, 68, 0);
+            background-color: transparent;
+            text-decoration: none;
+            text-transform: bold;
+        }
+
+        a:visited {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .starting_page {
+            background-image: url("img/slider1_01_2ebe96e91f.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .about_image {
+            display: flex;
+            align-items: center;
+        }
+
+        .card-horizontal {
+            display: flex;
+            flex: 1 1 auto;
+        }
+
+        .title {
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 10px
+        }
+
+        .content {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            overflow: hidden
+        }
+
+        .content .content-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            height: 99%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out 0s;
+            -moz-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s
+        }
+
+        .content:hover .content-overlay {
+            opacity: 1
+        }
+
+        .content-image {
+            width: 100%
+        }
+
+        .content img {
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 5px
+        }
+
+        .content-details {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s
+        }
+
+        .content:hover .content-details {
+            top: 50%;
+            left: 50%;
+            opacity: 1
+        }
+
+        .content-details h3 {
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5em;
+            text-transform: uppercase
+        }
+
+        .content-details p {
+            color: #fff;
+            font-size: 0.8em
+        }
+
+        .fadeIn-bottom {
+            top: 80%
+        }
+
+        .footer_style {
+            background-color: #a29bfe;
+            height: auto;
+
+        }
+
+        @media only screen and (max-device-width: 991px) {
+            a.dropdown-toggle{
+                pointer-events: none;
+            }
+        }
+    </style>
+</head>
+
+<body style="font-family: sans-serif;">
+    <nav class="navbar navbar-expand-lg p-2 navbar-light bg-light sticky-top">
+        <a class="navbar-brand pl-5" href="index.html">
+            <img src="logo.jpg" width="55" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto pr-5 text-capitalize">
+                <li class="nav-item pr-3">
+                    <a class="nav-link active" style="font-size: 17px;" aria-current="page" href="index.html">About
+                        Us</a>
+                </li>
+                <li class="nav-item dropdown pr-3 py-0">
+                    <a class="nav-link dropdown-toggle" style="font-size: 17px;" href="products.html"
+                        id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false"
+                        aria-current="page">
+                        Product
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="pantatec_ultimate.html">PantaTec ULTIMATE</a>
+                        <a class="dropdown-item" href="stainless_steel_shot.html">Stainless Steel Shot</a>
+                        <a class="dropdown-item" href="stainless_steel_grit.html">Stainless Steel Grit</a>
+                        <a class="dropdown-item" href="steel_shot.html">Steel Shot & Grit</a>
+                        <a class="dropdown-item" href="stainless_steel_cut.html">Stainless Steel Cut Wire Shot</a>
+                        <a class="dropdown-item" href="alluminium_cut_wire.html">Alluminium Cut wire Shot</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pr-3 py-0">
+                    <a class="nav-link dropdown-toggle" style="font-size: 17px;" href="pantatec_application.html"
+                        id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false"
+                        aria-current="page">
+                        PantaTec Applications
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="application.html">Application</a>
+                        <a class="dropdown-item" href="water_penetration_test.html">Water Penetration Test</a>
+                        <a class="dropdown-item" href="blasting_media_additive.html">Blasting Media Additive</a>
+                        <a class="dropdown-item" href="process_control.html">Process Control</a>
+                        <a class="dropdown-item" href="injecto_dosing.html">INJECTO Dosing Device</a>
+                    </div>
+                </li>
+                <li class="nav-item pr-3">
+                    <a class="nav-link " style="font-size: 17px;" aria-current="page" href="product_image.html">Product
+                        Images</a>
+                </li>
+                <li class="nav-item pr-3">
+                    <a class="nav-link " style="font-size: 17px;" aria-current="page" href="contact.html">Contact
+                        Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-5 starting_page">
+        <div class="container main_header" style="padding:150px; padding-bottom:100px;">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="tm-banner-header">
+                    <h1 class="text-uppercase tm-banner-title ml2" style="font-weight: bold;">
+                        <span class="text-wrapper">
+                            <span class="letters">
+                                <span class="ml-5">
+                                Jinytek</span> Enterprise</span>
+                        </span>
+                    </h1>
+                    <p class="tm-banner-subtitle text-center">Surface Cleaning Expert</p>
+                    <form class="text-center" action="contact.html" method="get">
+                        <button class="button"><span>ContactUs</span></button>
+                    </form>
+                </div>
+                <div class="row tm-banner-row" id="tm-section-search">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" style="padding: 4em; background-color: #eeebe9;">
+        <div class="container" style="padding: 4em; background-color: white;">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <img src="img/abputus.png" alt="" width="507px"
+                        height="285px" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-md-6">
+                    <h1 style="font-size: 45px;">About Us</h1>
+                    <p style="margin: 0px 0px 17px; padding:10px; font-size:17px; text-align:justify;">Established in
+                        the year 2014. We
+                        “JINYTEK ENTERPRISES” are one of the renowned manufacturers,
+                        Importers and suppliers of a diverse range of metal abrasives including cast steel shots, cast
+                        steel grits, steel cut wire shots, stainless steel shots, stainless steel cut wire shots and
+                        other industrial abrasives used for Surface Preparation prior to Painting ,Coating , rust
+                        removal, scales and Shot Peening of heat treated components. The offered range finds
+                        applications in field such as Ferrous and Non ferrous Foundries and forgings , Automobiles
+                        Industry, Railways, fasteners Industry, Aluminum Extrusion etc. Apart from this We are
+                        representing PantaTec GmbH, Germany all over India, who is manufacturer of PantaTec ULTIMATE
+                        additive for cleaning all metallic blasting media and for the improvement of blast results in
+                        blasting system. This Cleaning Additive cleans Shots, Oil and Grease while shot blasting / shot
+                        peening and eliminate Fire Problems arising from Shot Blasting Dust.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="padding-top:30px; padding-bottom:30px; background-color:white;">
+        <div class="container p-5" style="background-color: #e9b44c;">
+            <div class="row pb-5">
+                
+                 <div class="textOverImageContainer">
+                    <a href="pantatec_ultimate.html" class="textOverImage" style="background-image:url(img/pantatec_ultimate.jpg)" data-title="PantaTec ULTIMATE" data-text="In practice, a powder-form mixture of different mineral components has proven to be the additive which can be most simply combined with the operating mix. The additive is comprised of microscopically tiny thin platelets, which position themselves on the oil wetting of metal surfaces. Following the blending of the added substance with the shooting shot inside 15 – 30 minutes by ordinary course it is quickly prepared for use. Because of the nearly exceptionally high power of bond, oils and oils are promptly for all intents and purposes torn away from the metal surfaces and bound to the surfaces of the added substance particles...
+                      ">
+                    </a>
+                </div>
+                
+                <div class="textOverImageContainer">
+                    <a href="steel_shot.html" class="textOverImage" style="background-image:url(img/steel_shot.jpg)" data-title="Steel Shot & Grit" data-text="Steel shot is spherical metallic abrasive media produced by the molten steel by means of atomizing process. Metalworking Industries are the main users of Steel Shots such as ferrous and non-ferrous foundries, steel mills, forge shops and the metal fabricators, sand removal and to improve the metal surface preparation etc. since its process is not harmful, hence steel shot produces the least level of dust. Blast cleaning with steel abrasive media is an important operation at various stages of metal production. There are various assortments and sizes of the steel shot which gives additional common outcomes on the metal surface...
+                      ">
+                    </a>
+                </div>
+                
+                <div class="textOverImageContainer">
+                    <a href="stainless_steel_grit.html" class="textOverImage" style="background-image:url(img/stainless_steel_grit.jpg)" data-title="Stainless Steel Grit" data-text="Stainless Steel grit is random and angular. Stainless Steel shot will provide a smoother surface than Stainless steel grit. Stainless Steel grit, given its’ shape, will etch, or erode the surface. Although stainless shot is round it isn’t perceived in shot peening determinations as an acknowledged media for shot peening...
+                      ">
+                    </a>
+                </div>
+                
+                <div class="textOverImageContainer">
+                    <a href="stainless_steel_shot.html" class="textOverImage" style="background-image:url(img/stainless_steel_shot.jpg)" data-title="Stainless Steel Shot" data-text="Stainless Steel shot are special types of abrasives and can be used where high quality of surface finish is required. Stainless Steel shot are mainly of 3 types 200 series, 300 Series & 400 series. Stainless steel shots are very durable and are being used for deburring, blast cleaning and surface finishing. Less dust is created by using our high quality stainless steel shot and it gives the surface a bright appearance...
+                      ">
+                    </a>
+                </div>
+                
+                <div class="textOverImageContainer">
+                    <a href="stainless_steel_cut.html" class="textOverImage" style="background-image:url(img/stainless_steel_cut.jpg)" data-title="Stainless Steel Cut Wire Shot" data-text="Steel shot is spherical metallic abrasive media produced by the molten steel by means of atomizing process. Metalworking Industries are the main users of Steel Shots such as ferrous and non-ferrous foundries, steel mills, forge shops and the metal fabricators, sand removal and to improve the metal surface preparation etc. since its process is not harmful, hence steel shot produces the least level of dust. Blast cleaning with steel abrasive media is an important operation at various stages of metal production...">
+                    </a>
+                </div>
+                
+                <div class="textOverImageContainer">
+                    <a href="alluminium_cut_wire.html" class="textOverImage" style="background-image:url(img/alluminium_cut_wire.jpg)" data-title="Alluminium Cut Wire Shot" data-text="Aluminum Cut wire shots are essentially produced using aluminum alloy wire with the assistance of exceptional cutting machines. Aluminum cut wire shot is accessible in Grade EN AW-5019 (EN AW-AlMg5). They are exceptionally sturdy and leaves moderate buildup...
+                      ">
+                    </a>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="footer_style text-white text-center container-fluid p-5">
+        <p class="mb-0" style="font-size: 20px;">Copyright © <span class="tm-current-year">2021</span> Jinytek
+            Enterprise</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- <script>
+        var textWrapper = document.querySelector('.ml2');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml2 .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: (el, i) => 70 * i
+            }).add({
+                targets: '.ml2',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script> -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+
+</body>
+
+</html>

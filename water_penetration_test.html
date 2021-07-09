@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Water Penetration Test - Jinytek Enterprise</title>
+    <link rel="icon" href="logo_icon.jpg">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css"> <!-- Templatemo style -->
+
+    <style>
+        .button {
+            background: none;
+            border: 2px solid orangered;
+            color: orangered;
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+            width: 140px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .starting_page {
+            background-image: url("img/water_penetration_test.jpeg");
+            height: 560px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        a.dropdown-item {
+            height: 50px;
+            line-height: 45px;
+            border-bottom: 1px solid #000;
+            margin: 0px;
+        }
+        
+        a.dropdown-item:hover {
+            color: yellow;
+            background-color: #000;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        a:link {
+            color: rgb(128, 68, 0);
+            background-color: transparent;
+            text-decoration: none;
+            text-transform: bold;
+        }
+
+        a:visited {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .shortcut {
+            background-image: url("img/image.png");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .about_image {
+            display: flex;
+            align-items: center;
+        }
+
+        .card-horizontal {
+            display: flex;
+            flex: 1 1 auto;
+        }
+
+        .has-heading-color,
+        .has-heading-color:hover {
+            color: #1e73be;
+            font: "Roboto Slab";
+            font-weight: bold;
+            margin-left: 65px;
+
+        }
+
+        .has-heading-color,
+        .has-heading-color:hover strong {
+            font-weight: 700;
+
+        }
+
+        .entry-content p {
+            text-indent: 0em;
+            font-size: 20px;
+            margin-left: 65px;
+            font-style: 15px;
+        }
+
+        p.thicker {
+            font-weight: 500;
+
+        }
+
+        .footer_style {
+            background-color: #a29bfe;
+            height: auto;
+
+        }
+        @media only screen and (max-device-width: 991px) {
+            a.dropdown-toggle{
+                pointer-events: none;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: white; font-family: sans-serif;">
+    <nav class="navbar navbar-expand-lg p-2 navbar-light bg-light sticky-top">
+        <a class="navbar-brand pl-5" href="index.html">
+            <img src="logo.jpg" width="55" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto pr-5 text-capitalize">
+            <li class="nav-item pr-3">
+                <a class="nav-link " style="font-size: 17px;" aria-current="page" href="index.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown pr-3 py-0">
+                <a class="nav-link dropdown-toggle" style="font-size: 17px;" href="products.html"
+                id="navbarDropdown" role="button" aria-haspopup="true"
+                aria-expanded="false" aria-current="page">
+                Product
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="pantatec_ultimate.html">PantaTec ULTIMATE</a>
+                    <a class="dropdown-item" href="stainless_steel_shot.html">Stainless Steel Shot</a>
+                    <a class="dropdown-item" href="stainless_steel_grit.html">Stainless Steel Grit</a>
+                    <a class="dropdown-item" href="steel_shot.html">Steel Shot & Grit</a>
+                    <a class="dropdown-item" href="stainless_steel_cut.html">Stainless Steel Cut Wire Shot</a>
+                    <a class="dropdown-item" href="alluminium_cut_wire.html">Alluminium Cut wire Shot</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown pr-3 py-0">
+                <a class="nav-link dropdown-toggle active" style="font-size: 17px;" href="pantatec_application.html"
+                id="navbarDropdown" role="button" aria-haspopup="true"
+                aria-expanded="false" aria-current="page">
+                PantaTec Applications
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="application.html">Application</a>
+                    <a class="dropdown-item" href="water_penetration_test.html">Water Penetration Test</a>
+                    <a class="dropdown-item" href="blasting_media_additive.html">Blasting Media Additive</a>
+                    <a class="dropdown-item" href="process_control.html">Process Control</a>
+                    <a class="dropdown-item" href="injecto_dosing.html">INJECTO Dosing Device</a>
+                </div>
+            </li>
+            <li class="nav-item pr-3">
+                <a class="nav-link " style="font-size: 17px;" aria-current="page" href="product_image.html">Product
+                    Images</a>
+            </li>
+            <li class="nav-item pr-3">
+                <a class="nav-link " style="font-size: 17px;" aria-current="page" href="contact.html">Contact
+                    Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container-fluid p-5 starting_page">
+        <div class="container main_header" style="padding:150px">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="tm-banner-header">
+                    <a class="text-warning" href="pantatec_application.html" style="text-decoration-line: underline;
+                    text-decoration-style: dotted; color:black">
+                        <p class="tm-banner-subtitle text-center">PantaTec Applications</p>
+                    </a>
+                    <h1 class="text-uppercase tm-banner-title ml2" style="font-weight: bold;">
+                        <span class="text-wrapper">
+                            <span class="letters">Water Penetration Test</span>
+                        </span>
+                    </h1>
+                </div>
+                <div class="row tm-banner-row" id="tm-section-search">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="background-color:white; margin-top: 100px;">
+        <p style="font-size: 17px; font-weight:500; text-align:justify;">Much of the time the so-called water
+            penetration test is well-suited for the determination of the condition of the blasting process and the
+            blasting media in regard of conceivable contamination by oils and greases. For this test an underlying
+            blasting media sample is taken from the air flow separator at the blasting system. With the water
+            penetration test, faucet water is essentially permitted to dribble onto a heap of blasting media. Water
+            quickly penetrates a heap of oil and grease-free blasting shot. Recently casted shot is in every case
+            liberated from oil and grease.
+            <br><br>
+            Because of the low surface pressures of oily blasting media, the water stays as drops on top of the heap.
+            Generally speaking, the more it stays, the more prominent is the contamination due to oil or grease.
+            <br><br>
+            In the running activity, the water penetration test ought to be done routinely for measure control, for
+            instance in the preparation of anti-corrosion coatings.
+        </p>
+        <div class="row mt-5">
+            <div class="col-8">
+                <iframe src="https://www.youtube.com/embed/iLnDFwLOeok"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid shortcut mt-5">
+        <div class="row">
+            <a href="Blasting_media_additive.html">
+            <div class="col p-5">
+                <p class="text-white">PREVIOUS</p>
+                <h3 class="text-white">Blasting Media Additive</h3>
+            </div></a>
+            <div class="col p-5">
+                <a href="application.html">
+                <p class="text-white" style="text-align: right;">NEXT</p>
+                <h3 class="text-white" style="text-align: right;">Application</h3></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer_style text-white text-center container-fluid p-5">
+        <p class="mb-0" style="font-size: 20px;">Copyright © <span class="tm-current-year">2021</span> Jinytek
+            Enterprise</p>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Product Image - Jinytek Enterprise</title>
+    <link rel="icon" href="logo_icon.jpg">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css"> <!-- Templatemo style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .size
+        {
+            font-size: 35.2px;
+        }
+        .starting_page {
+            background-image: url("img/img11.jpg");
+            height: 560px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        a.dropdown-item {
+            height: 50px;
+            line-height: 45px;
+            border-bottom: 1px solid #000;
+            margin: 0px;
+        }
+        
+        a.dropdown-item:hover {
+            color: yellow;
+            background-color: #000;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        a:link {
+            color: rgb(128, 68, 0);
+            background-color: transparent;
+            text-decoration: none;
+            text-transform: bold;
+        }
+
+        a:visited {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .item
+        {
+            transition: .3s ease-in-out;
+        }
+        .item:hover
+        {
+            opacity: .7;
+        }
+        .footer_style {
+            background-color: #a29bfe;
+            height: auto;
+        }
+        @media only screen and (max-device-width: 991px) {
+            a.dropdown-toggle{
+                pointer-events: none;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: white; font-family: sans-serif;"> 
+    <nav class="navbar navbar-expand-lg p-2 navbar-light bg-light sticky-top">
+        <a class="navbar-brand pl-5" href="index.html">
+            <img src="logo.jpg" width="55" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto pr-5 text-capitalize">
+            <li class="nav-item pr-3">
+                <a class="nav-link " style="font-size: 17px;" aria-current="page" href="index.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown pr-3 py-0">
+                <a class="nav-link dropdown-toggle" style="font-size: 17px;" href="products.html"
+                id="navbarDropdown" role="button" aria-haspopup="true"
+                aria-expanded="false" aria-current="page">
+                Product
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="pantatec_ultimate.html">PantaTec ULTIMATE</a>
+                    <a class="dropdown-item" href="stainless_steel_shot.html">Stainless Steel Shot</a>
+                    <a class="dropdown-item" href="stainless_steel_grit.html">Stainless Steel Grit</a>
+                    <a class="dropdown-item" href="steel_shot.html">Steel Shot & Grit</a>
+                    <a class="dropdown-item" href="stainless_steel_cut.html">Stainless Steel Cut Wire Shot</a>
+                    <a class="dropdown-item" href="alluminium_cut_wire.html">Alluminium Cut wire Shot</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown pr-3 py-0">
+                <a class="nav-link dropdown-toggle" style="font-size: 17px;" href="pantatec_application.html"
+                id="navbarDropdown" role="button" aria-haspopup="true"
+                aria-expanded="false" aria-current="page">
+                PantaTec Applications
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="application.html">Application</a>
+                    <a class="dropdown-item" href="water_penetration_test.html">Water Penetration Test</a>
+                    <a class="dropdown-item" href="blasting_media_additive.html">Blasting Media Additive</a>
+                    <a class="dropdown-item" href="process_control.html">Process Control</a>
+                    <a class="dropdown-item" href="injecto_dosing.html">INJECTO Dosing Device</a>
+                </div>
+            </li>
+            <li class="nav-item pr-3">
+                <a class="nav-link active" style="font-size: 17px;" aria-current="page" href="product_image.html">Product
+                    Images</a>
+            </li>
+            <li class="nav-item pr-3">
+                <a class="nav-link " style="font-size: 17px;" aria-current="page" href="contact.html">Contact
+                    Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container-fluid p-5 starting_page">
+        <div class="container main_header" style="padding:150px">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="tm-banner-header">
+                    <h1 class="text-uppercase tm-banner-title" style="font-weight: bold;">Product Images</h1>
+                </div>
+                <div class="row tm-banner-row" id="tm-section-search">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/img1.jpg" class="fancybox" data-fancybox="gallery1"><img src="img/img1.jpg" alt="" width="100%" height="100%" style="filter: brightness(80%);">
+                    <div class="carousel-caption">
+                        <p style="font-weight: bold;">Pipe before blasting</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/img9.jpg" class="fancybox" data-fancybox="gallery1"><img src="img/img9.jpg" alt="" width="100%" height="100%" style="filter: brightness(80%);">
+                    <div class="carousel-caption">
+                        <p style="font-weight: bold;">Oil Free Components after using Pantatec Additive in Blasting System</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/img11.jpg" class="fancybox" data-fancybox="gallery1"><img src="img/img11.jpg" alt="" width="100%" height="100%" style="filter: brightness(80%);">
+                    <div class="carousel-caption">
+                        <p style="font-weight: bold;">Oil and Dust free surface after using Pantatec Additive</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/img3.jpg" class="fancybox" data-fancybox="gallery1"><img src="img/img3.jpg" alt="" width="100%" height="100%" style="filter: brightness(80%);">
+                    <div class="carousel-caption">
+                        <p style="font-weight: bold;">Steel Gear</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/img4.jpg" class="fancybox" data-fancybox="gallery1"><img src="img/img4.jpg" alt="" width="100%" height="100%" style="filter: brightness(80%);">
+                    <div class="carousel-caption">
+                        <p style="font-weight: bold;">Clean, oil & Grease Free Surface after using Pantatec additiv</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/img5.jpg" class="fancybox" data-fancybox="gallery1"><img src="img/img5.jpg" alt="" width="100%" height="100%" style="filter: brightness(80%);">
+                    <div class="carousel-caption">
+                        <p style="font-weight: bold;">Gear with Grease on surface</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/img6.jpg" class="fancybox" data-fancybox="gallery1"><img src="img/img6.jpg" alt="" width="100%" height="100%" style="filter: brightness(80%);">
+                    <div class="carousel-caption">
+                        <p style="font-weight: bold;">Grease free Surface with the use of Pantatec Additive in Shot blasting System</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/img7.jpg" class="fancybox" data-fancybox="gallery1"><img src="img/img7.jpg" alt="" width="100%" height="100%" style="filter: brightness(80%);">
+                    <div class="carousel-caption">
+                        <p style="font-weight: bold;">Oily Components loaded for shot blasting directly without pre cleaning Operation</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/img10.jpg" class="fancybox" data-fancybox="gallery1"><img src="img/img10.jpg" alt="" width="100%" height="100%" style="filter: brightness(80%);">
+                    <div class="carousel-caption">
+                        <p style="font-weight: bold;">Oil Free Gear Surface with the use of Pantatec Additive in Shot Blasting</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item col-sm-6 col-md-6 mb-3">
+                <a href="img/img2.jpg" class="fancybox" data-fancybox="gallery1"><img src="img/img2.jpg" alt="" width="100%" height="100%" style="filter: brightness(80%);">
+                    <div class="carousel-caption">
+                        <p style="font-weight: bold;">Pipe after Shot blasting with addition of PantaTec Cleaning</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item col-sm-6 col-md-6 mb-3">
+                <a href="img/img8.jpg" class="fancybox" data-fancybox="gallery1"><img src="img/img8.jpg" alt="" width="100%" height="100%" style="filter: brightness(80%);">
+                    <div class="carousel-caption">
+                        <p style="font-weight: bold;">Clean oil & Dust free Surface using Pantatec Additive in Blasting System</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="footer_style text-white text-center container-fluid mt-5 p-5">
+        <p class="mb-0" style="font-size: 20px;">Copyright © <span class="tm-current-year">2021</span> Jinytek
+            Enterprise</p>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+</body>
+
+</html>

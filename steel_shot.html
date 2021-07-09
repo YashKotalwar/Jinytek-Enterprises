@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Steel Shot & Grit - Jinytek Enterprise</title>
+    <link rel="icon" href="logo_icon.jpg">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css"> <!-- Templatemo style -->
+
+    <style>
+        .button {
+            background: none;
+            border: 2px solid orangered;
+            color: orangered;
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+            width: 140px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .starting_page {
+            background-image: url("img/steel_shot.jpg");
+            height: 560px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        a.dropdown-item {
+            height: 50px;
+            line-height: 45px;
+            border-bottom: 1px solid #000;
+            margin: 0px;
+        }
+        
+        a.dropdown-item:hover {
+            color: yellow;
+            background-color: #000;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        a:link {
+            color: rgb(128, 68, 0);
+            background-color: transparent;
+            text-decoration: none;
+            text-transform: bold;
+        }
+
+        a:visited {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .shortcut {
+            background-image: url("img/image.png");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .about_image {
+            display: flex;
+            align-items: center;
+        }
+
+        .card-horizontal {
+            display: flex;
+            flex: 1 1 auto;
+        }
+
+        .has-heading-color,
+        .has-heading-color:hover {
+            color: #1e73be;
+            font: "Roboto Slab";
+            font-weight: bold;
+            margin-left: 65px;
+
+        }
+
+        .has-heading-color,
+        .has-heading-color:hover strong {
+            font-weight: 700;
+
+        }
+
+        .entry-content p {
+            text-indent: 0em;
+            font-size: 20px;
+            margin-left: 65px;
+            font-style: 15px;
+        }
+
+        p.thicker {
+            font-weight: 500;
+
+        }
+
+        .footer_style {
+            background-color: #a29bfe;
+            height: auto;
+
+        }
+        @media only screen and (max-device-width: 991px) {
+            a.dropdown-toggle{
+                pointer-events: none;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: white; font-family: sans-serif;">
+    <nav class="navbar navbar-expand-lg p-2 navbar-light bg-light sticky-top">
+        <a class="navbar-brand pl-5" href="index.html">
+            <img src="logo.jpg" width="55" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto pr-5 text-capitalize">
+            <li class="nav-item pr-3">
+                <a class="nav-link " style="font-size: 17px;" aria-current="page" href="index.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown pr-3 py-0">
+                <a class="nav-link dropdown-toggle active" style="font-size: 17px;" href="products.html"
+                id="navbarDropdown" role="button" aria-haspopup="true"
+                aria-expanded="false" aria-current="page">
+                Product
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="pantatec_ultimate.html">PantaTec ULTIMATE</a>
+                    <a class="dropdown-item" href="stainless_steel_shot.html">Stainless Steel Shot</a>
+                    <a class="dropdown-item" href="stainless_steel_grit.html">Stainless Steel Grit</a>
+                    <a class="dropdown-item" href="steel_shot.html">Steel Shot & Grit</a>
+                    <a class="dropdown-item" href="stainless_steel_cut.html">Stainless Steel Cut Wire Shot</a>
+                    <a class="dropdown-item" href="alluminium_cut_wire.html">Alluminium Cut wire Shot</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown pr-3 py-0">
+                <a class="nav-link dropdown-toggle" style="font-size: 17px;" href="pantatec_application.html"
+                id="navbarDropdown" role="button" aria-haspopup="true"
+                aria-expanded="false" aria-current="page">
+                PantaTec Applications
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="application.html">Application</a>
+                    <a class="dropdown-item" href="water_penetration_test.html">Water Penetration Test</a>
+                    <a class="dropdown-item" href="blasting_media_additive.html">Blasting Media Additive</a>
+                    <a class="dropdown-item" href="process_control.html">Process Control</a>
+                    <a class="dropdown-item" href="injecto_dosing.html">INJECTO Dosing Device</a>
+                </div>
+            </li>
+            <li class="nav-item pr-3">
+                <a class="nav-link " style="font-size: 17px;" aria-current="page" href="product_image.html">Product
+                    Images</a>
+            </li>
+            <li class="nav-item pr-3">
+                <a class="nav-link " style="font-size: 17px;" aria-current="page" href="contact.html">Contact
+                    Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container-fluid p-5 starting_page">
+        <div class="container main_header" style="padding:150px">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="tm-banner-header">
+                    <a class="text-warning" href="products.html" style="text-decoration-line: underline;
+                    text-decoration-style: dotted; color:black">
+                        <p class="tm-banner-subtitle text-center">Product</p>
+                    </a>
+                    <h1 class="text-uppercase tm-banner-title ml2" style="font-weight: bold;">
+                        <span class="text-wrapper">
+                            <span class="letters">Steel Shot & Grit</span>
+                        </span>
+                    </h1>
+                </div>
+                <div class="row tm-banner-row" id="tm-section-search">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="background-color:white; margin-top: 100px;">
+        <p style="font-size: 17px; font-weight:500; text-align:justify;">Steel shot is spherical metallic abrasive media
+            produced by the molten steel by means of atomizing process. Metalworking Industries are the main users of
+            Steel Shots such as ferrous and non-ferrous foundries, steel mills, forge shops and the metal fabricators,
+            sand removal and to improve the metal surface preparation etc. since its process is not harmful, hence steel
+            shot produces the least level of dust. Blast cleaning with steel abrasive media is an important operation at
+            various stages of metal production. There are various assortments and sizes of the steel shot which gives
+            additional common outcomes on the metal surface. It delivers the most affordable grating media which has
+            reusing limit of in excess of 30 times because of its robustness and high durability.
+        </p>
+        <br>
+        <p style="font-size: 17px; font-weight:500; text-align:justify;">
+            Steel grit is random and angular. Steel shot will give a smoother surface than steel grit. Steel grit, given
+            its shape, will carve or dissolve the surface. Steel shot will provide a smoother surface than steel grit.
+            Steel grit, given its’ shape, given its shape, will draw or disintegrate the surface.
+        </p>
+        <br>
+        <p style="font-size: 17px; font-weight:bold; text-align:justify;">Applications of Steel Shot & Grits</p>
+        <ul style="font-size: 17px; font-weight:500; text-align:justify;">
+            <li>Removal of surface contaminants, giving a complete clean surface that helps in inspection for process defects.
+            </li>
+            <li>Surface preparation: Provides a surface profile (etch, smoothen, matte finish) preparatory to further processing like coating, painting, etc.
+            </li>
+            <li>Cleaning of metal, glass, wooden, etc. surfaces.
+            </li>
+            <li>Descaling
+            </li>
+            <li>Deburring
+            </li>
+        </ul>
+        <br>
+        <p style="font-size: 17px; font-weight:bold; text-align:justify;">Chemical Analysis (%)</p>
+        <br>
+        <img src="img/steel-shot_sizes.jpg" alt="" style="width: 100%; height: auto;">
+    </div>
+    <div class="container-fluid shortcut mt-5">
+        <div class="row">
+            <div class="col p-5">
+                <a href="stainless_steel_cut.html" class="tag">
+                    <p class="text-white">PREVIOUS</p>
+                    <h3 class="text-white">Stainless Steel Cut Wire Shot</h3>
+                </a>
+            </div>
+            <div class="col p-5">
+                <a href="stainless_steel_grit.html" class="tag">
+                    <p class="text-white" style="text-align: right;">NEXT</p>
+                    <h3 class="text-white" style="text-align: right;">Stainless Steel Grit</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer_style text-white text-center container-fluid p-5">
+        <p class="mb-0" style="font-size: 20px;">Copyright © <span class="tm-current-year">2021</span> Jinytek
+            Enterprise</p>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+
+</body>
+
+</html>
